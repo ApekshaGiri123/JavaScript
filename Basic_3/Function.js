@@ -20,3 +20,13 @@ function sum(a,b){//parameter
 }
 const res=sum(8,5)//arguments
 console.log(res)//undefined 
+
+const user={
+    name:"ABC",
+    age:24
+}
+function info(anyobject){
+    console.log(`My name is ${anyobject.name} and age is  ${anyobject.age}`)
+
+}
+info(user)
