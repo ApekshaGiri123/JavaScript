@@ -30,3 +30,13 @@ function info(anyobject){
 
 }
 info(user)
+
+
+function cal(...n){///rest operator
+    return n;
+}
+console.log(cal(2,4,1,3,5)) //[ 2, 4, 1, 3, 5 ]
+function call(a,b,...n){///rest operator
+    return n;
+}
+console.log(call(2,4,1,3,5)) //[ 1, 3, 5 ]
