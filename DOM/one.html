@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM</title>
+    <style>
+        .bg{
+            background-color: black;
+            color: #fff;
+        }
+    </style>
 </head>
-<body>
+<body class="bg">
+    <div class="p">
+
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+    </div>
      
+   
     
 </body>
+<script>
+    const parent=document.querySelector('.p')
+    // console.log(parent)
+    // console.log(parent.children)
+    // console.log(parent.children[0].innerHTML)
+    // for (let i = 0; i < array.length; i++) {
+    //     console.log(parent.children[i].innerHTML)
+        
+    // }
+    // parent.children[1].style.color="red"
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild)
+    const day=document.querySelector('.day')
+    // console.log(day)
+    // console.log(day.parentElement)
+    console.log(day.nextElementSibling)
+    console.log(parent.childNode)
+    
+
+</script>
+
 </html>

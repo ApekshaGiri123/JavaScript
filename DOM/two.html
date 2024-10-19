@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <style>
+        .bg{
+            background-color: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg">
+<ul class="lang">
+    <li>JS</li>
+</ul>
+     
+   
+    
+</body>
+
+<script>
+ 
+    function lang(langName){
+        const li=document.createElement('li')
+        li.innerHTML=`${langName}`
+        document.querySelector('.lang').appendChild(li)
+        
+        
+    }
+    lang("React")
+    lang("Java")
+
+
+    // optimize 
+    function add(langName){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.lang').appendChild(li)
+        
+    }
+    add("RN")
+    
+    
+    
+    // // edit
+    // const li=document.querySelector('li:nth-child(2)')
+    // const lii=document.createElement('li')
+    // lii.textContent="KKK"
+    // li.replaceWith(lii)
+
+
+    // remove
+    const li=document.querySelector('li:nth-child(2)')
+   
+    li.remove()
+
+
+</script>
+
+</html>
